@@ -1,1 +1,135 @@
+/* =============================================
+   CICAP - ESTILO OSCURO PROFESIONAL
+   ============================================= */
+body, .stApp {
+  background-color: #121212 !important;
+  color: #e6e6e6 !important;
+  font-family: "Segoe UI", sans-serif !important;
+}
 
+/* =============================================
+   TÍTULOS Y ENCABEZADOS
+   ============================================= */
+h1, h2, h3 {
+  color: #1fa14a !important;
+  text-align: center !important;
+  font-weight: 750 !important;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.25);
+}
+
+/* =============================================
+   SIDEBAR
+   ============================================= */
+[data-testid="stSidebar"] {
+  background-color: #1b1b1b !important;
+  color: #d1d1d1 !important;
+  border-right: 2px solid #1fa14a !important;
+}
+[data-testid="stSidebar"] * {
+  color: #d1d1d1 !important;
+  font-weight: 500;
+}
+
+/* =============================================
+   BOTONES
+   ============================================= */
+button[kind="primary"], button[kind="secondary"] {
+  background-color: #156b37 !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  border-radius: 8px !important;
+  border: none !important;
+  transition: all 0.2s ease-in-out;
+}
+button[kind="primary"]:hover, button[kind="secondary"]:hover {
+  background-color: #1fa14a !important;
+  transform: scale(1.03);
+}
+
+/* =============================================
+   CAMPOS DE FORMULARIO
+   ============================================= */
+.stTextInput input,
+.stPasswordInput input,
+.stSelectbox select,
+.stTextArea textarea,
+.stDateInput input {
+  background-color: #1e1e1e !important;
+  border: 1.5px solid #3caa61 !important;
+  border-radius: 6px !important;
+  color: #ffffff !important;
+  font-size: 0.95rem !important;
+  padding: 0.35rem 0.5rem !important;
+}
+.stTextInput input:focus,
+.stPasswordInput input:focus,
+.stSelectbox select:focus,
+.stTextArea textarea:focus,
+.stDateInput input:focus {
+  border: 1.5px solid #1fa14a !important;
+  box-shadow: 0 0 4px rgba(31, 161, 74, 0.4);
+  outline: none !important;
+}
+
+/* =============================================
+   TABLAS
+   ============================================= */
+.stDataFrame, .stTable {
+  font-size: 0.9rem !important;
+  border-radius: 8px !important;
+  color: #e6e6e6 !important;
+}
+table {
+  border-collapse: collapse !important;
+  border-radius: 8px !important;
+  border: 1px solid #333 !important;
+}
+thead {
+  background-color: #156b37 !important;
+  color: white !important;
+  font-weight: 600 !important;
+}
+tbody tr:nth-child(even) {
+  background-color: #1a1a1a !important;
+}
+tbody tr:hover {
+  background-color: #222 !important;
+}
+
+/* =============================================
+   MENSAJES
+   ============================================= */
+.stSuccess {
+  background-color: #1b3d25 !important;
+  color: #b9f6ca !important;
+  border-left: 4px solid #27ae60 !important;
+}
+.stWarning {
+  background-color: #3e2f15 !important;
+  color: #f9e79f !important;
+  border-left: 4px solid #ffc107 !important;
+}
+.stError {
+  background-color: #3b1e1e !important;
+  color: #ffb3b3 !important;
+  border-left: 4px solid #dc3545 !important;
+}
+
+/* =============================================
+   BANNER INSTITUCIONAL FIJO
+   ============================================= */
+.banner-cicap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #156b37;
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  z-index: 999;
+}
